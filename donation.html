@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Gateway Internship</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./images/logo_small.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <section class="header1">
+      <nav class="navbar">
+        <img src="/images/logo_small.png" alt="logo">
+        <a href="#" class="navbar-brand">THE SPARKS FOUNDATION</a>
+        <div class="navlinks" id="navlinks">
+          <i class="fas fa-times" onclick="hideMenu()"> </i>
+          <ul>
+            <li class="nav-item">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html">Contact us</a>
+            </li>
+          </ul>
+        </div>
+        <i class="fas fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <section class="donation-box">
+        <div class="donate-head">Be the reason of someones smile</div>
+        <p>
+          Helping other people can be a cure not just for those who are in
+          need,<br />
+          but for your soul as well.
+        </p>
+        <form>
+          <script
+            src="https://checkout.razorpay.com/v1/payment-button.js"
+            data-payment_button_id="pl_HlMmDDnyZolmF0"
+            async
+          ></script>
+        </form>
+      </section>
+      <section class="footer">
+        <div class="icon">
+        <a href="http://facebook.com"><img src="/images/5365678_fb_facebook_facebook logo_icon.svg"></a>
+        <a href="http://instagram.com"><img src="/images/5296765_camera_instagram_instagram logo_icon.svg"></a>
+        <a href="http://linkedin.com"><img src="/images/5296501_linkedin_network_linkedin logo_icon.svg"></a>
+        <a href="http://github.com"><img src="/images/394187_github_icon.svg"></a>
+      </div>
+        <div class="developer">
+          made with <i class="far fa-heart"></i> by Satnam Singh
+        </div>
+      </section>
+    </section>
+
+    <script>
+      var navlinks = document.getElementById("navlinks");
+
+      function showMenu() {
+        navlinks.style.right = "0";
+      }
+
+      function hideMenu() {
+        navlinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
